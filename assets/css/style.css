@@ -1,0 +1,167 @@
+/* glabal   */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    transition: .7s;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    background: #fafafa;
+    font-size: 14px;
+    color: #252b42;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+._container {
+    max-width: 1110px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+
+/*   -------------------------------------------------------------   */
+
+.header {
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__block {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block .logo img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.header__block .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__block .nav ul li {
+    margin-right: 50px;
+}
+
+.header__block .nav ul li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1f2e35cc;
+}
+
+.header__block .log-out ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__block .log-out ul li {
+    margin-right: 24px;
+}
+
+.header .menu input {
+    display: none;
+}
+
+.header .menu label i {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    font-size: 60px;
+}
+
+
+/* ---------------------- media ----------------------- */
+
+@media(max-width:900px) {
+    .header {
+        height: 70px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+    .header__block {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__block .logo img {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .header__block .nav ul li {
+        margin-right: 20px;
+    }
+    .header__block .log-out ul li {
+        margin-right: 14px;
+    }
+}
+
+@media(max-width:650px) {
+    .header__block .nav {
+        display: none;
+    }
+    .header__block .log-out {
+        display: none;
+    }
+    .header .menu label #menu {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        font-size: 60px;
+    }
+    .header .menu #chek:checked~label #menu {
+        display: none;
+    }
+    .header .menu #chek:checked~label #menu-x {
+        display: block;
+    }
+}

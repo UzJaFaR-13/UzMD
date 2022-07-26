@@ -6,10 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
 
+    <header class="header ">
+        <div class="header__block _container">
+            <div class="logo">
+                <a href="">
+                    <img src="/assets/imgs/Logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="chek">
+                <label for="chek">
+                    <i class='bx bx-menu-alt-right' id="menu" ></i>
+                    <i class='bx bx-x' id="menu-x" ></i>
+                </label>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Technology
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Client
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Partner
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="log-out">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/uzjafarc/">
+                            <img src="/assets/imgs/Logo/home.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:uzjafarc@gmail.com">
+                            <img src="/assets/imgs/Logo/mail.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+998941834513">
+                            <img src="/assets/imgs/Logo/shuffle.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+        let menu = document.querySelector("#menu");
+        let menu__x = document.querySelector("#menu-x");
+        let header = document.querySelector(".header");
+        let header__block = document.querySelector(".header__block");
+        let nav = document.querySelector(".nav");
+
+        menu.addEventListener("click", function() {
+            header.style.height = "100vh"
+            header__block.style.display = "flex"
+            header__block.style.flexDirection = "column"
+            nav.style.display = "block"
+
+        });
+    </script>
 </body>
 
 </html>
