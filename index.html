@@ -30,32 +30,32 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/Services.html">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/Product.html">
                             Product
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/Technology.html">
                             Technology
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/About.html">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/Client.html">
                             Client
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="assets/nav/Partner.html">
                             Partner
                         </a>
                     </li>
@@ -64,7 +64,7 @@
             <div class="log-out">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/uzjafarc/">
+                        <a href="https://www.instagram.com/uzjafarc/" target="_blank">
                             <img src="/assets/imgs/Logo/home.svg" alt="">
                         </a>
                     </li>
@@ -84,20 +84,45 @@
         </div>
 
     </header>
+    <!-- ----------------------- main ---------------------------- -->
+    <main class="main">
+        <section class="block-1">
+            <div class="hBlock  _container">
+                <div class="block-1__text">
+                    <h1>
+                        Making the most of the ever-growing
+                        <span>
+                            Information Technology
+                        </span>
+                    </h1>
+                    <p>
+                        Managed by a team of professional experts with extensive experience and impressive track records
+                    </p>
+                    <button>
+                        Read More
+                    </button>
+                </div>
+                <div class="block-1__img">
+                    <img src="/assets/imgs/home/block-1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
     <script>
         let menu = document.querySelector("#menu");
         let menu__x = document.querySelector("#menu-x");
-        let header = document.querySelector(".header");
-        let header__block = document.querySelector(".header__block");
         let nav = document.querySelector(".nav");
+        let log__out = document.querySelector(".log-out");
+
 
         menu.addEventListener("click", function() {
-            header.style.height = "100vh"
-            header__block.style.display = "flex"
-            header__block.style.flexDirection = "column"
-            nav.style.display = "block"
-
+            nav.style.left = "0";
+            log__out.style.left = "0";
         });
+        menu__x.addEventListener("click", function() {
+            nav.style.left = "";
+            log__out.style.left = "";
+        })
     </script>
 </body>
 
